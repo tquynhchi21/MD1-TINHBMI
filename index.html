@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>CÂN NẶNG</table>
+<input id="weight" type="text"> <br>
+
+<table>CHIỀU CAO</table>
+<input id="height" type="text">
+<button id="check" onclick="xemChiSo()">CHECK</button>
+<h2 id="ketQua"></h2>
+<script>
+    function xemChiSo(){
+        let a = +document.getElementById("weight").value;
+        let b = +document.getElementById("height").value;
+        let c = a / (b * b)
+        if (c < 18){
+            document.getElementById("ketQua").innerText = "HƠI GẦY";
+        }else{
+            if (c < 25){
+                document.getElementById("ketQua").innerText = "BÌNH THƯỜNG"
+            }else {
+                if (c < 30){
+                    document.getElementById("ketQua").innerText = "HƠI MẬP"
+                }else {
+                    document.getElementById("ketQua").innerText = "QUÁ MẬP"
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
